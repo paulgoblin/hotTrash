@@ -16,7 +16,12 @@ app.service('mapSrvc', function($http){
   }
 
   this.drawMap = (mapView) => {
-    new google.maps.Map(document.getElementById('map'), mapView);
+    this.map = new google.maps.Map(document.getElementById('map'), mapView);
+    this.viewMarker = new google.maps.Marker({
+      position: this.mapView.center,
+      map: this.map,
+      title: 'Hello World!'
+    });
   }
 
   this.findAddress = function(inputAddress){

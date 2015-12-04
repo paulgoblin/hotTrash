@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('curbApp', ['ui.router']);
+var app = angular.module('curbApp', ['ui.router', "firebase"]);
 
 app.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
