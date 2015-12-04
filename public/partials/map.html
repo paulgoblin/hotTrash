@@ -1,0 +1,15 @@
+<div class="searchBar">
+  <label for="address">Find an Address</label>
+  <input ng-model="inputAddress" id='address' type="text" class="input-group-addon"/>
+  <button ng-click="findAddress(inputAddress)" class="btn">Search!</button>
+</div>
+      
+<div class="col-xs-12">
+  
+</div>
+
+<div ng-show="isLoadingMap" class='col-xs-9 col-xs-offset-3 mapLoading'></div>
+
+<div ng-hide="isLoadingMap" class='col-xs-9 col-xs-offset-3' id="map"></div>
+<!-- {{map}} -->
+<!-- {{currentLoc()}} -->

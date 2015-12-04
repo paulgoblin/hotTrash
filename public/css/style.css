@@ -1,7 +1,22 @@
 html, body { height: 100%; margin: 0; padding: 0; }
-#map { height: 100%; border: 1px solid black;}
+#map {
+  height: calc(100% -  5em);
+  /*border: 1px solid black;*/
+}
 
 .searchBar {
   background-color: lightgray;
   padding: 1em;
+  height: 5em;
+}
+
+.mapLoading {
+  height: calc(100% -  5em);
+  /*border: 1px solid black;*/
+  background: url('http://downgraf.com/wp-content/uploads/2014/09/01-progress.gif') no-repeat center;
+}
+
+#address {
+  width: 40%;
+  text-align: left;
 }
