@@ -4,7 +4,7 @@ app.controller('mapCtrl', function($scope, $rootScope, mapSrvc) {
 
 
   $scope.isLoadingMap = mapSrvc.mapView === 0;
-  $scope.inputAddress = "211 Stratford Rd, Goldsboro, NC";
+  $scope.inputAddress = "";
 
   navigator.geolocation.getCurrentPosition( (p) => {
     var zoom = 10;
@@ -33,6 +33,6 @@ app.controller('mapCtrl', function($scope, $rootScope, mapSrvc) {
   $scope.postMark = function(){
     mapSrvc.postMark();
   }
-  
+
 
 });
