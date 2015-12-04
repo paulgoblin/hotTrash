@@ -1,3 +1,3 @@
-
+Uses Geofire to store locations. Still working on showing stored locations ...
 
 https://limitless-stream-7620.herokuapp.com/
