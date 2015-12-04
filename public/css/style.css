@@ -1,5 +1,5 @@
 html, body { height: 100%; margin: 0; padding: 0; }
-#map { height: 100%; }
+#map { height: 100%; border: 1px solid black;}
 
 .searchBar {
   background-color: lightgray;

@@ -10,10 +10,13 @@ html
     link(href='css/style.css' rel='stylesheet')
     script(src="vendor/angular/angular.min.js")
     script(src="vendor/angular-ui-router/release/angular-ui-router.min.js")
-  body(ng-app='MyApp')
+  body(ng-app='curbApp')
     .searchBar
       label(for='address') Find an Address
       input#address(type='text', value='211 Stratford Rd, Goldsboro, NC')
       button#findAddress(onclick='findAddress()') Search!
     ui-view
-    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB5J33uD9EckQdm-P_V2H4utRvbxzzKws0&callback=initMap')
+    script(src='js/module.js')
+    script(src='js/controllers/main.js')
+
+    //- script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB5J33uD9EckQdm-P_V2H4utRvbxzzKws0&callback=initMap')
